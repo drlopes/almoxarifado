@@ -86,8 +86,6 @@ class ApplicationPanelProvider extends PanelProvider
                     ->passwordUpdateRules(rules: ['required', Password::defaults()], requiresCurrentPassword: true)
                     ->enableTwoFactorAuthentication(),
                 LightSwitchPlugin::make(),
-                FilamentBackgroundsPlugin::make()
-                    ->imageProvider(Triangles::make()),
             ]);
     }
 
@@ -102,6 +100,8 @@ class ApplicationPanelProvider extends PanelProvider
         //     route('filament.application.pages.dashboard', 'cddnpc'),
         // ];
 
-        return [];
+        return [
+            route('filament.application.pages.dashboard', 'dev'),
+        ];
     }
 }
