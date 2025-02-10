@@ -22,7 +22,6 @@
         "saade/filament-autograph": "^3.1",
         "spatie/laravel-permission": "^6.9",
         "stechstudio/filament-impersonate": "^3.9",
-        "swisnl/filament-backgrounds": "^1.1",
         "tightenco/parental": "^1.4",
         "yebor974/filament-renew-password": "^2.0"
     },
