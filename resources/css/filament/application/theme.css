@@ -1,0 +1,15 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+
+/* make sidebar sticky */
+.fi-page-sub-navigation-sidebar {
+    @apply sticky top-20;
+}
+
+/* make sidebar thinner on smaller screens */
+@media (max-width: 1440px) {
+    .fi-page-sub-navigation-sidebar {
+        @apply w-40 !important;
+    }
+}
